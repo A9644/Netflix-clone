@@ -1,26 +1,38 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import requests from './Request';
+import Row from './Row';
+import instance from './Axios';
+import Banner from './Banner';
+import Nav from './Nav';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      <Banner
+        title="NetflixOriginals"
+        fetchURL={requests.fetchNetflixOriginals}
+      />
+    
+    <Row title="NetlixOriginals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+    <Row title="TrendingNow" fetchUrl={requests.fetchTrending} />
+    <Row title="TopRated" fetchUrl={requests.fetchTopRated}/>
+    <Row title="ActionMovies" fetchUrl={requests.fetchActionMovies}/>
+    <Row title="ComedyMovies" fetchUrl={requests.fetchComedyMovies} />
+    
+      
+    
+      
+    
+     
+    </>
   );
+  
 }
+
+
+
 
 export default App;
