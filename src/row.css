@@ -14,6 +14,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
 }
+
 .movie_posters::-webkit-scrollbar {
   display: none;
 }
@@ -72,6 +73,6 @@
     #111
   );
 }
-.navbar {
+.orgnav {
   background-color: black;
 }

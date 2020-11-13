@@ -1,0 +1,92 @@
+.tab-icon-door {
+  width: 4rem;
+  height: 4rem;
+  fill: grey;
+  text-align: center;
+}
+.overflow-hidden {
+  background-color: rgba(20, 20, 20);
+}
+.tab-icon-devices {
+  width: 9rem;
+  height: 9rem;
+  fill: grey;
+}
+
+.commitbtn {
+  background-color: rgba(211, 9, 19);
+  border: none;
+  border-radius: 12px;
+  margin: 10px 2px;
+  padding: 4px 2px;
+  color: white;
+  width: 300px;
+  transition: all 299ms;
+  z-index: 1;
+}
+.commitbtn:hover {
+  transform: scale(0.98);
+  opacity: 0.8;
+}
+.commitbtn:focus {
+  outline: none;
+}
+.tab-icon-price {
+  width: 4.375rem;
+  height: 3rem;
+  fill: grey;
+}
+.tabtext {
+  color: grey;
+  transition: all 222ms;
+}
+.tabtext:hover {
+  color: white;
+  border-bottom: 4px solid rgba(211, 9, 19);
+}
+Tab:hover svg {
+  fill: #ffff;
+}
+.tab-content1 {
+  background-color: black;
+}
+.tab-content1 {
+  background-color: black;
+}
+@media only screen and (max-width: 600px) {
+  .content1 {
+    font-size: 17px;
+  }
+  .tab-1-pic {
+    width: 240px;
+    height: 200px;
+  }
+  .commitbtn {
+    width: 200px;
+    padding: 1px;
+  }
+  .offer {
+    width: 170px;
+    padding: 2px;
+  }
+  .c2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .content1 {
+    font-size: 17px;
+  }
+  .tab-1-pic {
+    width: 473px;
+    height: 373px;
+  }
+  .commitbtn {
+    width: 160px;
+    padding: 2px;
+  }
+  .offer {
+    width: 170px;
+    padding: 2px;
+  }
+}
